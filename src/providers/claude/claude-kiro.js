@@ -884,7 +884,7 @@ async _ensureProfileArn(isSocialAuth) {
  * @private
  */
 async _discoverProfileArn() {
-    // 无可用 token 时调用必然失败；刷新后的下一次 loadCredentials 会重试。
+    // 无可用 token 时调用必然失败；刷新成功后 _doTokenRefresh 会立即重试。
     if (!this.accessToken || this.isTokenExpired()) {
         logger.debug('[Kiro Auth] Skip profileArn discovery: no usable access token yet.');
         return null;
@@ -1088,6 +1088,11 @@ async saveCredentialsToFile(filePath, newData) {
                 const expiresAt = new Date(Date.now() + expiresIn * 1000).toISOString();
                 this.expiresAt = expiresAt;
                 logger.info('[Kiro Auth] Access token refreshed successfully');
+
+                // IdC refresh responses do not include profileArn. Discover it now that
+                // the fresh token and expiry are installed, before the first generation
+                // request and before persisting the refreshed credentials.
+                await this._ensureProfileArn(isSocialAuth);
 
                 const updatedTokenData = {
                     accessToken: this.accessToken,
