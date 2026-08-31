@@ -82,6 +82,7 @@
     </td>
   </tr>
   -->
+  <!-- Atlas Cloud
   <tr>
     <td width="25%" align="center" valign="middle">
       <a href="https://www.atlascloud.ai/console/coding-plan">
@@ -92,6 +93,7 @@
       Atlas Cloud による本プロジェクトへのスポンサーに感謝します！Atlas Cloud は、開発者が動画生成、画像生成、および LLM API にアクセスするための单二の AI API を提供する<strong>全モーダル AI 推論プラットフォーム</strong>です。複数のベンダーの統合を管理する代わりに、一度接続するだけですべてのモダリティにわたる <strong>300 以上の厳選されたモデル</strong>に統合アクセスできます。よりリーズナブルな API アクセスのために、Atlas Cloud の新しい<a href="https://www.atlascloud.ai/console/coding-plan">コーディングプランプロモーション (coding plan)</a>をぜひチェックしてください。
     </td>
   </tr>
+  -->
   <!--
   <tr>
     <td width="25%" align="center" valign="middle">

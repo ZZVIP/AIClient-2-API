@@ -82,6 +82,7 @@
     </td>
   </tr>
   -->
+  <!-- Atlas Cloud
   <tr>
     <td width="25%" align="center" valign="middle">
       <a href="https://www.atlascloud.ai/console/coding-plan">
@@ -92,6 +93,7 @@
       感谢 Atlas Cloud 赞助本项目！Atlas Cloud 是一款<strong>全模态 AI 推理平台</strong>，为开发者提供单一的 AI API 以轻松接入视频生成、图像生成和大语言模型 API。无需管理多个供应商集成，您只需连接一次，即可统一访问跨所有模态的 <strong>300 多种精选模型</strong>。欢迎查看 Atlas Cloud 全新的 <a href="https://www.atlascloud.ai/console/coding-plan">编码计划促销活动 (coding plan)</a>，以获取更具性价比的 API 接入服务。
     </td>
   </tr>
+  -->
   <!--
   <tr>
     <td width="25%" align="center" valign="middle">
