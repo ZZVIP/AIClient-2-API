@@ -163,6 +163,16 @@
   </tr>
   <tr>
     <td width="25%" align="center" valign="middle">
+      <a href="https://www.axisnow.io">
+        <img src="static/axisnow.jpg" alt="AxisNow Sponsor" width="180">
+      </a>
+    </td>
+    <td width="75%" align="left" valign="middle">
+      <a href="https://www.axisnow.io">AxisNow</a> is building a cloud-agnostic edge control layer. AxisNow protects and accelerates websites and APIs while delivering a great access experience across mainland China and the rest of the world. Through its client SDK, AxisNow extends acceleration and security capabilities to native and mobile apps—all on CDN networks you control and can freely compose.
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" align="center" valign="middle">
       <img src="static/wechat.png" alt="Sponsor Contact" width="150">
     </td>
     <td width="75%" align="left" valign="middle">

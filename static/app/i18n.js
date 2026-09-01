@@ -53,6 +53,8 @@ const translations = {
         'sponsors.fennoDesc': 'Fenno.ai 是一家稳定、高效的 API 中转服务商，目前主要提供 Codex 中转服务，兼容 OpenAI 及 Anthropic 协议，可灵活接入 Codex、Claude Code、OpenCode 等主流编程工具，可稳定支撑千亿 Token/日的企业级调用需求，支持国内及海外主体公对公结算、开票。Fenno.ai 为 CC-Connect 的用户提供了专属福利：<a href="https://api.fenno.ai/register?redirect=/purchase?tab=subscription%26group=16&amp;aff=2EW65KEQC938" target="_blank" rel="noopener noreferrer">通过此链接</a>即可订阅 <strong>9.9 元/150刀额度</strong>的超值 Coding Plan，邀请好友最高可享 <strong>20% 奖励</strong>，多邀多得！',
         'sponsors.qiniuDesc': '七牛云 AI 是七牛云（02567.HK）旗下<strong>企业级大模型 MaaS 平台</strong>，可一站式调用全球 <strong>150+ 主流模型</strong>，兼容全球主流模型厂商协议，覆盖文本、图像、音频、视频、文件处理等全模态处理能力，服务超过 169 万企业及开发者用户。专属福利：企业用户可<a href="https://s.qiniu.com/FRF7bq" target="_blank" rel="noopener noreferrer">免费领 <strong>1200 万 Token</strong></a>，邀请好友最高得<strong>百亿 Token</strong>。',
         'sponsors.vmcardDesc': '<strong>VMCard｜AI 业务企业级支付卡</strong>，面向 AI 账号商、AI API 服务商及批量订阅业务团队。GPT / Claude 丝滑支付，专属美国 Visa 卡段，支持 API 批量开卡，全网最低结算汇率，满足大批量、长期稳定支付需求。<a href="https://vmcardio.com/zh/register?code=902506" target="_blank" rel="noopener noreferrer">通过此链接注册</a>。',
+        'sponsors.axisnowUrl': 'https://www.axisnow.io/zh',
+        'sponsors.axisnowDesc': '<a href="https://www.axisnow.io/zh" target="_blank" rel="noopener noreferrer">AxisNow</a> 正在打造一个云无关的边缘控制层。使用 AxisNow 可以保护并加速网站与 API，兼顾中国大陆及全球的访问体验，并通过客户端 SDK，将加速与安全能力延伸至原生/移动 App——这些都在您可控的、自由组合的 CDN 网络。',
 
         // Dashboard
         'dashboard.title': '系统概览',
@@ -1321,6 +1323,8 @@ const translations = {
         'sponsors.fennoDesc': 'Fenno.ai is a stable and efficient API relay service currently focused on Codex. It supports OpenAI and Anthropic protocols, works with Codex, Claude Code, OpenCode, and other coding tools, and reliably handles enterprise-scale demand of hundreds of billions of tokens per day. Corporate settlement and invoicing are available for domestic and overseas entities. CC-Connect users can <a href="https://api.fenno.ai/register?redirect=/purchase?tab=subscription%26group=16&amp;aff=2EW65KEQC938" target="_blank" rel="noopener noreferrer">subscribe through this link</a> for a Coding Plan with <strong>$150 quota for RMB 9.9</strong> and earn up to <strong>20% rewards</strong> through referrals.',
         'sponsors.qiniuDesc': 'Qiniu Cloud AI is an <strong>enterprise-grade large-model MaaS platform</strong> under Qiniu Cloud (02567.HK). It offers one-stop access to <strong>150+ mainstream global models</strong>, supports major provider protocols, and covers text, image, audio, video, and file processing for more than 1.69 million enterprise and developer users. Enterprise users can <a href="https://s.qiniu.com/FRF7bq" target="_blank" rel="noopener noreferrer">claim <strong>12 million tokens</strong> for free</a> and earn up to <strong>tens of billions of tokens</strong> through referrals.',
         'sponsors.vmcardDesc': '<strong>VMCard | Enterprise Payment Cards for AI Businesses</strong> is built for AI account vendors, AI API providers, and teams managing bulk subscriptions. It supports seamless GPT / Claude payments, dedicated U.S. Visa BINs, API-based bulk card issuance, and highly competitive settlement exchange rates for stable, high-volume payment needs. <a href="https://vmcardio.com/zh/register?code=902506" target="_blank" rel="noopener noreferrer">Register through this link</a>.',
+        'sponsors.axisnowUrl': 'https://www.axisnow.io',
+        'sponsors.axisnowDesc': '<a href="https://www.axisnow.io" target="_blank" rel="noopener noreferrer">AxisNow</a> is building a cloud-agnostic edge control layer. AxisNow protects and accelerates websites and APIs while delivering a great access experience across mainland China and the rest of the world. Through its client SDK, AxisNow extends acceleration and security capabilities to native and mobile apps—all on CDN networks you control and can freely compose.',
         
         // Dashboard
         'dashboard.title': 'System Overview',
@@ -2653,7 +2657,8 @@ const I18N_SELECTOR = [
     '[data-i18n-placeholder]',
     '[data-i18n-title]',
     '[data-i18n-aria-label]',
-    '[data-i18n-alt]'
+    '[data-i18n-alt]',
+    '[data-i18n-href]'
 ].join(', ');
 
 function parseI18nParams(element, attributeName = '') {
@@ -2664,7 +2669,7 @@ function parseI18nParams(element, attributeName = '') {
 }
 
 function translateElement(element) {
-    ['placeholder', 'title', 'aria-label', 'alt'].forEach(attributeName => {
+    ['placeholder', 'title', 'aria-label', 'alt', 'href'].forEach(attributeName => {
         const key = element.getAttribute(`data-i18n-${attributeName}`);
         if (key) {
             element.setAttribute(attributeName, t(key, parseI18nParams(element, attributeName)));

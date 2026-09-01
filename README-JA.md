@@ -163,6 +163,16 @@
   </tr>
   <tr>
     <td width="25%" align="center" valign="middle">
+      <a href="https://www.axisnow.io">
+        <img src="static/axisnow.jpg" alt="AxisNow Sponsor" width="180">
+      </a>
+    </td>
+    <td width="75%" align="left" valign="middle">
+      <a href="https://www.axisnow.io">AxisNow</a> は、クラウドに依存しないエッジ制御レイヤーを構築しています。AxisNow を使用すると、中国本土と世界各地のアクセス体験を両立しながら、Web サイトや API を保護・高速化できます。さらにクライアント SDK を通じて、高速化とセキュリティ機能をネイティブ／モバイルアプリにも拡張できます。これらはすべて、お客様が管理し、自由に組み合わせられる CDN ネットワーク上で実現されます。
+    </td>
+  </tr>
+  <tr>
+    <td width="25%" align="center" valign="middle">
       <img src="static/wechat.png" alt="Sponsor Contact" width="150">
     </td>
     <td width="75%" align="left" valign="middle">
