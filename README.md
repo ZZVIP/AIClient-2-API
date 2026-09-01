@@ -168,7 +168,7 @@
       </a>
     </td>
     <td width="75%" align="left" valign="middle">
-      <a href="https://www.axisnow.io">AxisNow</a> is building a cloud-agnostic edge control layer. AxisNow protects and accelerates websites and APIs while delivering a great access experience across mainland China and the rest of the world. Through its client SDK, AxisNow extends acceleration and security capabilities to native and mobile apps—all on CDN networks you control and can freely compose.
+      <a href="https://www.axisnow.io">AxisNow</a> protects and accelerates websites and APIs while delivering an optimized access experience across mainland China and the rest of the world. Through its client SDK, AxisNow extends acceleration and security capabilities to native/mobile apps — <strong>self-hosted private CDN｜subscription-based DDoS-protected CDN｜independently controlled, flexibly composable CDN networks.</strong>
     </td>
   </tr>
   <tr>
